@@ -34,7 +34,7 @@ router.post('/login', async function(req,res,next){
     session.user_id = username;
     session.shop_id = shop_id;
     session.role = role;
-    console.log(user_id,shop_id,role);
+    // console.log(user_id,shop_id,role);
     if(role == 'shop'){
       res.redirect('/users');
     }
