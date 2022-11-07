@@ -11,6 +11,7 @@ var adminRouter = require('./routes/admin')
 
 var app = express();
 
+
 //Setting up session information
 app.use(session({
   secret: 'long_string_for_session_sercure',

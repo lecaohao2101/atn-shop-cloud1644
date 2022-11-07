@@ -2,13 +2,284 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+  
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <form action="" method="post">
+    <!-- <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
+    <!-- <form action="" method="post">
       <button type="submit">Login</button>
-    </form>
+    </form> -->
+
+    <header>
+      <div class="wrapper">
+          <h1>ATN SHOP<span class="color">.</span></h1>
+          <nav> 
+              <ul>
+                
+                  <li>
+                    <a>
+                      <form>
+                      <button type="submit">Home</button>
+                      </form>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a>
+                      <form>
+                      <button type="submit">Conact</button>
+                      </form>
+                    </a>
+                  </li>
+
+                  <li>    
+                    <a>
+                     <form>
+                     <button type="submit">Blog</button>
+                     </form>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a>
+                    <form action="" method="post">
+                    <button type="submit">Account</button>
+                    </form>
+                    </a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+ <div id="hero-image">
+    <div class="wrapper">
+        <h2 style = "color:rgb(0, 0, 0)"><strong>Welcome to ATN-SHOP</strong><br/>
+         the store Vietnam's top</h2>
+        <a class="button-1">Get Started</a>
+    </div>
+ </div>
+
+
+<!-- <footer>
+  <div class="wrapper">
+      <div id="footer-info">
+          <p>Copyright 2020 CompanyName. All rights reserved.</p>
+          <p><a >Terms of Service</a> I <a >Privacy</a></p>
+      </div>
+      <div id="footer-links">
+          <ul>
+              <h5>Visit</h5>
+              <li>Viet Nam</li>
+              <li><a >Mon-Sat</a></li>
+              <li><a >Careers</a></li>
+          </ul>
+          <ul>
+              <li><h5>Company</h5></li>
+              <li><a >About Us</a></li>
+              <li><a >Meet The Team</a></li>
+              <li><a >What We Do</a></li>
+              <li><a >Careers</a></li>
+          </ul>
+          <ul>
+              <li><h5>Company</h5></li>
+              <li><a >About Us</a></li>
+              <li><a >Meet The Team</a></li>
+              <li><a >What We Do</a></li>
+              <li><a >Careers</a></li>
+          </ul>
+      </div>
+      <div class="clear"></div>
+  </div>
+</footer> -->
+
+<style>
+body {
+    background-color: #fff;
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #02b8dd;
+}
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1300px;
+    font-size: 20px;
+}
+
+/* header */
+header {
+    height: 120px;
+}
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+header h1 .color {
+    color: #02b8dd;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 50px;
+}
+header nav ul li a {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+
+/*hero image*/
+#hero-image {
+    height: 580px;
+    padding-top: 1px;
+    background: #e8eced url('https://touristtown.ca/images2/DB/2016/03/05/SPC57787565411600X6407537149-IMG_6298.jpg') no-repeat center;
+}
+#hero-image h2 {
+    margin: 180px 0 40px 0;
+}
+.button-1 {
+    display: block;
+    text-align: center;
+    background: #444;
+    border-radius: 3px;
+    color: #fff;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.button-1:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+#cta {
+    padding: 60px 0;
+    text-align: center;
+}
+#cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+.button-2 {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #02b8dd;
+    color: #02b8dd;
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.button-2:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+/* footer
+footer {
+    padding: 60px 0;
+    background-color: #f8fafa;
+}
+#footer-info {
+    width: 380px;
+    float: left;
+    margin-top: 10px;
+}
+#footer-links {
+    width: 520px;
+    float: right;
+}
+#footer-links ul {
+    width: 150px;
+    float: right;
+    margin-left: 20px;
+}
+#footer-links ul li {
+    margin: 10px 0;
+} */
+
+
+</style>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>

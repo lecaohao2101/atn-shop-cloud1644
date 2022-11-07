@@ -4,6 +4,8 @@ var router = express.Router();
 
 var session
 
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'ATN Shop Management' });
@@ -32,7 +34,7 @@ router.post('/login', async function(req,res,next){
     session.user_id = username;
     session.shop_id = shop_id;
     session.role = role;
-    console.log(session.user_id,session.shop_id,session.role);
+    console.log(user_id,shop_id,role);
     if(role == 'shop'){
       res.redirect('/users');
     }
