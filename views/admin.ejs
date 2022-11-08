@@ -24,7 +24,7 @@
       <div class="py-4 px-3 mb-4 bg-light">
         <div class="media d-flex align-items-center"><img src="https://m.media-amazon.com/images/I/81oqkwrsmxL.jpg" alt="..." width="65" algin-magin="center" class="mr-3 rounded-circle img-thumbnail shadow-sm">
           <div class="media-body">
-            <h4 class="m-0">Admin: <%=name%></h4>
+            <h4 class="m-0"><%=name%></h4>
             <p class="font-weight-light text-muted mb-0"><b>ATN SHOP</b></p>
             <p class="font-weight-light text-muted mb-0"><b>Role: Admin</b></p>
           </div>
@@ -95,6 +95,8 @@
       <p class="lead text-white mb-0">These are your products.</p>
       <div class="separator"></div> 
       <div class="row text-white">
+        <%- select_box %>
+        <br></br>
         <div class="col-lg-7">
           <%- table_string %>
         </div>
