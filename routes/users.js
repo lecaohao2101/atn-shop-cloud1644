@@ -5,6 +5,7 @@ var crud = require('../models/crud');
 var session;
 
 /* GET users listing. */
+//để áp dụng vào chức năng liệt kê các user, cũng như thực hiện chức năng tìm kiếm
 router.get('/', async function(req, res, next) {
   session = req.session;
   if(session.user_id){
@@ -19,7 +20,7 @@ router.get('/', async function(req, res, next) {
     res.redirect('/login');
   }
 });
-
+//dùng để gửi dữ liệu từ client thêm vào dữ liệu của server để thực hiện chức năng tạo mới một user
 router.post('/crud', async function(req, res, next) {
   console.log(req.body);
   let results = await crud(req.body,session);

@@ -35,6 +35,9 @@ async function display_products(shop_id,session){
     if(session.shop_id !=0){
         table_string += `<th>actions</th>`
     }
+    // if(session.shop_id ==0){
+    //     table_string += `<th>actions</th>`
+    // }
     
     table_string += `</tr>`;
     //display all rows of table
@@ -60,13 +63,9 @@ async function display_products(shop_id,session){
         //since only shop owners can input new data then the butons should only on their side
         if(session.shop_id!=0){
             table_string += 
-            `<td> 
-                    <button type='submit' name='crud' value='delete' style='color:red'>Delete</button>
-                    <button type='submit' name='crud' value='update'>Update</button>
-                </td>
+            `<td><button style="font-size:16px; color:blue;" type='submit' name='crud' value='update'>Update</button></td>
+             <td><button style="font-size:16px; color:red;" type='submit' name='crud' value='delete'>Delete</button></td>
             </tr></form>`
-
-
         } 
     }
     //since only shop owner can add product, director does not need it
@@ -94,7 +93,7 @@ async function display_products(shop_id,session){
         }
         table_string += 
         `<td> 
-            <button type='submit' name='crud' value='insert' class = 'dontshow' >Insert</button>
+            <button style="font-size:16px; color:green;" type='submit' name='crud' value='isnert'>Insert</button>
         </td>`
         table_string += '</tr></form>';
 }        
