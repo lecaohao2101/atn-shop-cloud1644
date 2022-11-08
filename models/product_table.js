@@ -33,7 +33,7 @@ async function display_products(shop_id,session){
     }
 
     if(session.shop_id !=0){
-        table_string += `<th>actions</th>`
+        table_string += `<th class='dontshow'>actions</th>`
     }
     // if(session.shop_id ==0){
     //     table_string += `<th>actions</th>`
@@ -63,8 +63,8 @@ async function display_products(shop_id,session){
         //since only shop owners can input new data then the butons should only on their side
         if(session.shop_id!=0){
             table_string += 
-            `<td><button style="font-size:16px; color:blue;" type='submit' name='crud' value='update'>Update</button></td>
-             <td><button style="font-size:16px; color:red;" type='submit' name='crud' value='delete'>Delete</button></td>
+            `<td><button style="font-size:16px; color:blue;" type='submit' name='crud' value='update' class='dontshow'>Update</button></td>
+             <td><button style="font-size:16px; color:red;" type='submit' name='crud' value='delete' class='dontshow'>Delete</button></td>
             </tr></form>`
         } 
     }
@@ -75,7 +75,7 @@ async function display_products(shop_id,session){
         last_id = temp.rows[0][tempName];
         console.log(last_id);
     // Add an empty row and insert button at the end of row
-        table_string += `<tr><form action="/users/crud" method="post">`
+        table_string += `<tr class='dontshow''><form action="/users/crud" method="post">`
         for (let j=0; j<num_fields; j++) {
             let field_name = data.fields[j].name
 
@@ -93,7 +93,7 @@ async function display_products(shop_id,session){
         }
         table_string += 
         `<td> 
-            <button style="font-size:16px; color:green;" type='submit' name='crud' value='isnert'>Insert</button>
+            <button style="font-size:16px; color:green;" type='submit' name='crud' value='isnert' class='dontshow' >Insert</button>
         </td>`
         table_string += '</tr></form>';
 }        
