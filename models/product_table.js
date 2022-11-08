@@ -61,7 +61,7 @@ async function display_products(shop_id,session){
         if(session.shop_id!=0){
             table_string += 
             `<td> 
-                    <button type='submit' name='crud' value='delete'>Delete</button>
+                    <button type='submit' name='crud' value='delete' style='color:red'>Delete</button>
                     <button type='submit' name='crud' value='update'>Update</button>
                 </td>
             </tr></form>`
